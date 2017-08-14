@@ -1,0 +1,13 @@
+@font-face {
+	font-family: "SFUITextLight";
+	src: url("../fonts/SF-UI-Text-Light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "SFUITextBold";
+	src: url("../fonts/SF-UI-Text-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

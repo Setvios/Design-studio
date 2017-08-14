@@ -1,0 +1,105 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+}
+
+h1,h2 {
+	font-family: 'Alice', serif;
+}
+
+p {
+	font-family: 'Arsenal', sans-serif;
+}
+
+header a {
+	color: #313131;
+}
+
+header {
+	background-image: url(../images/header-background.jpg);
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.navbar {
+	background: #fff;
+	border: none;
+	border-radius: 0px;
+	margin: 0px;
+}
+
+a.navbar-brand {
+	display: inline-block;
+	height: 68px;
+	padding: 9px 15px;
+	color: #313131;
+}
+
+.navbar.navbar-nav > li {
+    display: inline-block;
+    float: none
+  }
+
+.navbar .navbar-nav > li > a {
+	font: 14px 'Alice', serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #313131;
+	line-height: 35px;
+	transition: all .2s;
+	-o-transition: all .2s;
+	-moz-transition: all .2s;
+	-webkit-transition: all .2s;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.navbar .navbar-nav > li > a:hover {
+	color: red;
+}
+
+.nav li:last-child a {
+	color: red;
+}
+
+.logoFirstWord {
+	font-family: 'SFUITextLight', sans-serif;
+	font-size: 30px;
+}
+
+.logoSecondWord {
+	font-family: 'SFUITextBold', sans-serif;
+	font-size: 30px;
+	display: inline-block;
+	padding-top: 1px;
+}
+
+.navbarButton{
+	background-image: url(../images/menu-icon.png)
+}
+
+.headerImageSection {
+	color: #ececec;
+	padding-top: 190px;
+}
+
+.headerImageSection h1 {
+	color: #ececec;
+	font-size: 50px;
+	letter-spacing: 2px;
+	padding-bottom: 25px;
+}
+
+.headerImageSection h5 {
+	color: #ececec;
+	font-size: 15px;
+	font-family: "SFUITextLight", sans-serif;
+	text-transform: uppercase;
+}
