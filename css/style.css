@@ -13,9 +13,6 @@ p {
 	font-family: 'Arsenal', sans-serif;
 }
 
-/*########### GENERAL ___END___ ###########*/
-
-
 /*########### NAVIGATION HEADER ###########*/
 
 .navbar {
@@ -54,7 +51,6 @@ a.navbar-brand {
 	display: inline-block;
 	padding-top: 1px;
 }
-/*----- HEADER LOGO _END_ -----*/
 
 /*----- NAVBAR MENU -----*/
 .nav > li > a {
@@ -95,10 +91,6 @@ a.navbar-brand {
 .nav li:last-child a {
 	color: red;
 }*/
-/*----- NAVBAR MENU _END_ -----*/
-
-/*########### NAVIGATION HEADER ___END___ ###########*/
-
 
 /*########### HEADER IMAGE SECTION ###########*/
 
@@ -130,9 +122,6 @@ header {
 	text-transform: uppercase;
 }
 
-/*########### HEADER IMAGE SECTION ___END___ ###########*/
-
-
 /*############## SERVICES SECTION ##############*/
 
 .fullWidth.container {
@@ -147,18 +136,17 @@ header {
 	margin-bottom: 80px;
 }
 
+/*----- SERVICE BLOCK -----*/
 .serviceBlock {
 	height: 550px;
 	border: 1px solid #444;
 }
-
 .serviceBlock h1 {
 	font: 48px 'Alice', serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: #19191a;
 }
-
 .serviceBlock p {
 	font: 20px 'Arsenal', sans-serif;
 	color: #454851;
