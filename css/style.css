@@ -78,9 +78,10 @@ a.navbar-brand {
 	content: "";
 	position: absolute;
 	bottom: 10px;
-	left: 47%;
+	left: 50%;
 	height: 7px;
 	width: 7px;
+	margin-left: -5px;
 	border-radius: 50%;
 	background-color: #c41654;
 }
