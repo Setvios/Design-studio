@@ -1,4 +1,5 @@
 /*########### GENERAL ###########*/
+
 body {
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
@@ -14,6 +15,7 @@ p {
 
 /*########### GENERAL ___END___ ###########*/
 
+
 /*########### NAVIGATION HEADER ###########*/
 
 .navbar {
@@ -21,11 +23,6 @@ p {
 	border: none;
 	border-radius: 0px;
 	margin: 0px;
-}
-
-.navbar.navbar-nav > li {
-	display: inline-block;
-	float: none
 }
 
 .navbarButton{
@@ -87,6 +84,7 @@ a.navbar-brand {
 
 /*########### NAVIGATION HEADER ___END___ ###########*/
 
+
 /*########### HEADER IMAGE SECTION ###########*/
 
 header {
@@ -96,10 +94,6 @@ header {
 	background-attachment: fixed;
 	background-size: cover;
 	min-height: 100vh;
-}
-
-header a {
-	color: #313131;
 }
 
 .headerImageSection {
