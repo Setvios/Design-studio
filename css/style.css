@@ -134,3 +134,46 @@ header {
 
 
 /*############## SERVICES SECTION ##############*/
+
+.fullWidth.container {
+	width: 100%;
+}
+
+.sectionTitle {
+	font: 30px 'Alice', serif;
+	color: #454851;
+	text-transform: uppercase;
+	margin-top: 45px;
+	margin-bottom: 80px;
+}
+
+.serviceBlock {
+	height: 550px;
+	border: 1px solid #444;
+}
+
+.serviceBlock h1 {
+	font: 48px 'Alice', serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #19191a;
+}
+
+.serviceBlock p {
+	font: 20px 'Arsenal', sans-serif;
+	color: #454851;
+	margin-top: 25px;
+}
+
+.serviceName{
+	padding: 110px 0;
+}
+
+.serviceImage{
+	padding: 0;
+}
+
+.serviceImage img {
+	width: 100%;
+}
+
