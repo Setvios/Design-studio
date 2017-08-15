@@ -57,12 +57,13 @@ a.navbar-brand {
 /*----- HEADER LOGO _END_ -----*/
 
 /*----- NAVBAR MENU -----*/
-.navbar .navbar-nav > li > a {
+.nav > li > a {
 	font: 14px 'Alice', serif;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #313131;
 	line-height: 35px;
+	position: relative;
 	transition: all .2s;
 	-o-transition: all .2s;
 	-moz-transition: all .2s;
@@ -70,11 +71,12 @@ a.navbar-brand {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-	text-decoration: none;
 	background-color: inherit;
+	outline: none;
 }
-.navbar .navbar-nav > li > a:hover {
-	color: red;
+.nav > li > a:hover,
+.nav > li > a:active {
+	color: #c41654;
 }
 /* last child tip
 .nav li:last-child a {
