@@ -29,9 +29,8 @@ p {
 }
 
 .headerPhone {
-	font: 18px 'Alice', serif;
+	font: bold 18px 'Alice', serif;
 	text-transform: uppercase;
-	font-weight: bold;
 	color: #313131;	
 	line-height: 65px;
 }
@@ -39,28 +38,25 @@ p {
 /*--- logo ---*/
 
 a.navbar-brand {
-	display: inline-block;
+	color: #313131;
 	height: 68px;
 	padding: 9px 15px;
-	color: #313131;
+	display: inline-block;
 }
 .logoFirstWord {
-	font-family: 'SFUITextLight', sans-serif;
-	font-size: 30px;
+	font: 30px 'SFUITextLight', sans-serif;
 }
 .logoSecondWord {
-	font-family: 'SFUITextBold', sans-serif;
-	font-size: 30px;
-	display: inline-block;
+	font: 30px 'SFUITextBold', sans-serif;
 	padding-top: 1px;
+	display: inline-block;
 }
 
 /*--- menu items ---*/
 
 .nav > li > a {
-	font: 14px 'Alice', serif;
+	font: bold 14px 'Alice', serif;
 	text-transform: uppercase;
-	font-weight: bold;
 	color: #313131;
 	line-height: 35px;
 	position: relative;
@@ -111,15 +107,14 @@ header {
 	padding-top: 190px;
 }
 .headerImageSection h1 {
-	color: #ececec;
 	font-size: 50px;
+	color: #ececec;
 	letter-spacing: 2px;
 	padding-bottom: 25px;
 }
 .headerImageSection h5 {
+	font: 15px "SFUITextLight", sans-serif;
 	color: #ececec;
-	font-size: 15px;
-	font-family: "SFUITextLight", sans-serif;
 	text-transform: uppercase;
 }
 
@@ -141,14 +136,14 @@ header {
 
 .serviceDescription {
 	height: 550px;
-	border: 1px solid #444;
+	/*border: 1px solid #444;*/
 	padding: 110px 0;
 }
 .serviceDescription h1 {
 	font: 48px 'Alice', serif;
+	color: #19191a;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	color: #19191a;
 }
 .serviceDescription p {
 	font: 20px 'Arsenal', sans-serif;
@@ -167,13 +162,16 @@ header {
 
 /*--- service button ---*/
 
-.serviceDescription .serviceButton {
+.serviceDescription .serviceButton,
+.serviceDescription .serviceButton:focus {
 	font: 20px 'Arsenal', sans-serif;
 	color: #c41654;
-	padding: 10px 60px;
-	border: 1px solid #c41654;
 	text-transform: uppercase;
+	text-decoration: none;
+	border: 1px solid #c41654;
 	border-radius: 30px;
 	margin-top: 20px;
+	padding: 10px 60px;
 	display: inline-block;
+	outline: none;
 }
