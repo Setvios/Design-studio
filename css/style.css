@@ -13,7 +13,9 @@ p {
 	font-family: 'Arsenal', sans-serif;
 }
 
-/*########### NAVIGATION HEADER ###########*/
+/*############## HEADER SECTION ##############*/
+
+/*======== Header Navbar ========*/
 
 .navbar {
 	background: #fff;
@@ -27,14 +29,15 @@ p {
 }
 
 .headerPhone {
-	font: 16px 'Alice', serif;
+	font: 18px 'Alice', serif;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #313131;	
 	line-height: 65px;
 }
 
-/*----- HEADER LOGO -----*/
+/*--- logo ---*/
+
 a.navbar-brand {
 	display: inline-block;
 	height: 68px;
@@ -52,7 +55,8 @@ a.navbar-brand {
 	padding-top: 1px;
 }
 
-/*----- NAVBAR MENU -----*/
+/*--- menu items ---*/
+
 .nav > li > a {
 	font: 14px 'Alice', serif;
 	text-transform: uppercase;
@@ -92,7 +96,7 @@ a.navbar-brand {
 	color: red;
 }*/
 
-/*########### HEADER IMAGE SECTION ###########*/
+/*======== Header Image Section ========*/
 
 header {
 	background-image: url(../images/header-background.jpg);
@@ -102,19 +106,16 @@ header {
 	background-size: cover;
 	min-height: 100vh;
 }
-
 .headerImageSection {
 	color: #ececec;
 	padding-top: 190px;
 }
-
 .headerImageSection h1 {
 	color: #ececec;
 	font-size: 50px;
 	letter-spacing: 2px;
 	padding-bottom: 25px;
 }
-
 .headerImageSection h5 {
 	color: #ececec;
 	font-size: 15px;
@@ -136,32 +137,43 @@ header {
 	margin-bottom: 80px;
 }
 
-/*----- SERVICE BLOCK -----*/
-.serviceBlock {
+/*--- service description ---*/
+
+.serviceDescription {
 	height: 550px;
 	border: 1px solid #444;
+	padding: 110px 0;
 }
-.serviceBlock h1 {
+.serviceDescription h1 {
 	font: 48px 'Alice', serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: #19191a;
 }
-.serviceBlock p {
+.serviceDescription p {
 	font: 20px 'Arsenal', sans-serif;
 	color: #454851;
 	margin-top: 25px;
 }
 
-.serviceDescription{
-	padding: 110px 0;
-}
+/*--- service image ---*/
 
 .serviceImage{
 	padding: 0;
 }
-
 .serviceImage img {
 	width: 100%;
 }
 
+/*--- service button ---*/
+
+.serviceDescription .serviceButton {
+	font: 20px 'Arsenal', sans-serif;
+	color: #c41654;
+	padding: 10px 60px;
+	border: 1px solid #c41654;
+	text-transform: uppercase;
+	border-radius: 30px;
+	margin-top: 20px;
+	display: inline-block;
+}
