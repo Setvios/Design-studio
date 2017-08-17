@@ -2,7 +2,7 @@
 
 body {
 	-webkit-font-smoothing: antialiased;
-	-webkit-overflow-scrolling: touch;
+	/* -webkit-overflow-scrolling: touch; */
 }
 
 h1,h2 {
@@ -11,6 +11,29 @@ h1,h2 {
 
 p {
 	font-family: 'Arsenal', sans-serif;
+}
+
+/*--- buttonBasic ---*/
+
+.buttonBasic,
+.buttonBasic:focus {
+	font: 20px 'Arsenal', sans-serif;
+	color: #c41654;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 30px;
+	margin-top: 20px;
+	border: 1px solid #c41654;
+	padding: 10px 60px;
+	display: inline-block;
+	outline: none;
+	width: 50%;
+	text-align: center;
+}
+
+.buttonBasic:hover {
+	text-decoration: none;
+	color: #c41654;
 }
 
 /*############## HEADER SECTION ##############*/
@@ -25,7 +48,7 @@ p {
 }
 
 .navbarButton{
-	background-image: url(../images/menu-icon.png)
+	background-image: url('../images/menu-icon.png')
 }
 
 .headerPhone {
@@ -40,7 +63,7 @@ p {
 a.navbar-brand {
 	color: #313131;
 	height: 68px;
-	padding: 9px 15px;
+	padding: 4px 15px;
 	display: inline-block;
 }
 .logoFirstWord {
@@ -48,7 +71,7 @@ a.navbar-brand {
 }
 .logoSecondWord {
 	font: 30px 'SFUITextBold', sans-serif;
-	padding-top: 1px;
+	margin-top: -12px;
 	display: inline-block;
 }
 
@@ -160,18 +183,70 @@ header {
 	width: 100%;
 }
 
-/*--- service button ---*/
+/* ############## OFFERS SECTION ############## */
 
-.serviceDescription .serviceButton,
-.serviceDescription .serviceButton:focus {
+.noPadding {
+	padding: 0;
+}
+/* background-color: rgba(0, 0, 0, .8); */
+
+.offerDescription {
+	height: 600px;
+	padding: 0;
+	border: 1px solid black;
+}
+.firstOfferBackground {
+	background-image: url('../images/firstOffer.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.offerDescription h2 {
+	font: 28px 'Alice', serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-top: 65px;
+	margin-bottom: 20px;
+}
+.offerDescription p {
+	font: 18px 'Arsenal', sans-serif;
+	color: #ffffff;
+	margin-top: 45px;
+	text-align: left;
+	padding: 0 12px;
+}
+
+.offerDescription p:last-of-type {
+	font-size: 22px;
+	margin-top: 130px;
+	text-align: center;
+}
+
+
+
+/*--- offer button ---*/
+
+.offerDescription .buttonOffer,
+.offerDescription .buttonOffer:focus {
 	font: 20px 'Arsenal', sans-serif;
-	color: #c41654;
+	color: #ffffff;
 	text-transform: uppercase;
 	text-decoration: none;
-	border: 1px solid #c41654;
-	border-radius: 30px;
-	margin-top: 20px;
-	padding: 10px 60px;
+	border-radius: 40px;
+	margin-top: 35px;
+	border: 1px solid #ffffff;
+	padding: 20px 80px;
 	display: inline-block;
 	outline: none;
+	width: 80%;
+}
+
+.offerDescription .buttonOffer:hover {
+	background-color: #fff;
+	color: #242020;
+	transition: all .2s;
+	-o-transition: all .2s;
+	-moz-transition: all .2s;
+	-webkit-transition: all .2s;
 }
