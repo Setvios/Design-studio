@@ -310,3 +310,20 @@ header {
 .inputForm input[type="submit"] {
 	margin-top: 40px;
 }
+
+
+/* ############### FOOTER SECTION ############### */
+
+
+.contactsInfo {
+	font: 20px 'Arsenal', sans-serif;
+	margin-top: 90px;
+	margin-bottom: 70px;
+	color: #454851;
+}
+
+.contactsInfo h3 {
+	font: bold 20px 'Arsenal', sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+}
