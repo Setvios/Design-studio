@@ -1,7 +1,7 @@
 /*########### GENERAL ###########*/
 
 body {
-	-webkit-font-smoothing: antialiased;
+	/* -webkit-font-smoothing: antialiased; */
 	/* -webkit-overflow-scrolling: touch; */
 }
 
@@ -29,6 +29,7 @@ p {
 	outline: none;
 	background: transparent;
 	text-align: center;
+	transition: all .2s;
 	-o-transition: all .2s;
 	-moz-transition: all .2s;
 	-webkit-transition: all .2s;
@@ -197,12 +198,12 @@ header {
 .noPadding {
 	padding: 0;
 }
-/* background-color: rgba(0, 0, 0, .8); */
 
 .offerDescription {
 	height: 600px;
 	padding: 0;
 }
+
 .backgroundOverlay {
 	height: 600px;
 	-o-transition: all .3s;
@@ -212,6 +213,7 @@ header {
 .offerDescription:hover .backgroundOverlay{
 	background-color: rgba(0, 0, 0, .8);
 }
+
 .firstOfferBackground {
 	background-image: url('../images/firstOffer.png');
 	background-position: center;
@@ -231,7 +233,7 @@ header {
 	background-size: 100%;
 }
 
-
+ /* --- offer description ---  */
 
 .offerDescription h2 {
 	font: 28px 'Alice', serif;
@@ -255,8 +257,6 @@ header {
 	text-align: center;
 }
 
-
-
 /*--- offerButton ---*/
 
 .offerDescription .offerButton,
@@ -277,7 +277,6 @@ header {
 	-moz-transition: all .2s;
 	-webkit-transition: all .2s;
 }
-
 .offerDescription .offerButton:hover {
 	background-color: #fff;
 	color: #242020;
@@ -321,7 +320,6 @@ header {
 	margin-bottom: 70px;
 	color: #454851;
 }
-
 .contactsInfo h3 {
 	font: bold 20px 'Arsenal', sans-serif;
 	text-transform: uppercase;

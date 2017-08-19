@@ -7,8 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Alice|Arsenal" rel="stylesheet">
-	<!-- Normalize + CSS + Bootstrap + fonts-->
-	<!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
+	<!-- Main CSS + Bootstrap + fonts-->
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -19,7 +18,7 @@
 
 	<!-- ############### HEADER SECTION ############### -->
 
-	<header>
+	<header id="Home">
 
 		<!-- ======== Header Navbar ======== -->
 
@@ -46,8 +45,8 @@
 						<li><a href="#Services">послуги</a></li>
 						<li><a href="#Offers">пропозиції</a></li>
 						<li><a href="#">портфоліо</a></li>
-						<li><a href="#">контакти</a></li>
-						<li><a href="#">консультація</a></li>
+						<li><a href="#Contacts">контакти</a></li>
+						<li><a href="#Footer">консультація</a></li>
 					</ul>
 
 					<!-- --- phone --- -->
@@ -301,32 +300,40 @@
 	<footer id="Footer" class="Footer">
 		<div class="container">
 			<div class="row">
+
+				<!-- ======== First Block ======== -->
 				<div class="col-md-4">
 					<div class="contactsInfo text-center">
 						<h3>пошта</h3>
 						interior.design@gmail.com
 					</div>
 				</div>
+
+				<!-- ======== Second Block ======== -->
 				<div class="col-md-4">
 					<div class="contactsInfo text-center">
 						<h3>телефон</h3>
 						+38 063 153 9000
 					</div>
 				</div>
+
+				<!-- ======== Third Block ======== -->
 				<div class="col-md-4">
 					<div class="contactsInfo text-center">
 						<h3>ми у facebook</h3>
-						<a href="#" class="facebookLink">Interior Design</a>
+						<a href="#Home" class="facebookLink">Interior Design</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
-		
+	
 
+	<!-- ############### SCRIPTS ############### -->
 
 	<script src="js/jquery-3.2.1.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
 	<script>
 	document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 	</script>
