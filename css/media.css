@@ -3,11 +3,82 @@
 	.headerPhone {
 		text-align: center;
 	}
+
 }
 
-/* Medius Devices , Desktop */
-@media only screen and (min-width: 992px) {
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 992px) {
 
+	.navbar .container {
+		position: relative;
+	}
+
+	.navbar .navbar-right {
+		position: absolute;
+		right: 45px;
+	}
+
+	/* navbar-nav align */
+	.navbar .navbar-nav > li a {
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+	.navbar .navbar-nav > li a {
+		padding-right: 25px;
+		padding-left: 25px;
+		height: 68px;
+	}
+}
+
+/* Medium Devices , Desktop */
+@media only screen and (max-width: 992px) {
+	
+	.headerImageSection {
+		padding-top: 90px;
+	}
+
+	.sectionTitle {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.serviceDescription {
+		height: 300px;
+		padding-top: 20px;
+		padding-bottom: 15px;
+	}
+
+	/* services button, h1, p align center */
+	.services .mainButton {
+		display: table;
+		margin: 25px auto;
+	}
+	.serviceDescription h1, p {
+		text-align: center;
+	}
+	.services .serviceImage img {
+		display: none;
+	}
+
+	.offerDescription {
+		height: 600px;
+		margin-top: 30px;
+	}
+
+}
+
+@media only screen and (max-width: 1200px) {
+	.headerImageSection {
+		padding-top: 110px;
+	}
+	.serviceDescription {
+		padding: 30px 0;
+	}
+	.sectionTitle {
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
 }
 
 /* Large Devices, Wide Screen */
