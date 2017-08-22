@@ -47,6 +47,10 @@ input {
 
 /*############## HEADER SECTION ##############*/
 
+.home {
+	position: relative;
+}
+
 /*======== Header Navbar ========*/
 
 .navbar {
@@ -149,8 +153,15 @@ header {
 	min-height: 100vh;
 }
 .headerImageSection {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 50%;
+	height: 40%;
+	margin: auto;
 	color: #ececec;
-	padding-top: 190px;
 }
 .headerImageSection h1 {
 	font-size: 50px;
