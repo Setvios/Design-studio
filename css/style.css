@@ -85,7 +85,7 @@ ul.nav {
 
 a.navbar-brand {
 	color: #313131;
-	height: 68px;
+	height: 100%;
 	padding: 4px 15px;
 	display: inline-block;
 }
@@ -101,7 +101,7 @@ a.navbar-brand {
 /*--- menu items ---*/
 
 .nav > li > a {
-	font: bold 1em 'Alice', serif;
+	font: bold 1.1em 'Alice', serif;
 	text-transform: uppercase;
 	color: #313131;
 	line-height: 35px;
@@ -193,8 +193,8 @@ header {
 /*--- service description ---*/
 
 .serviceDescription {
-	height: 550px;
-	padding: 70px 0;
+	height: 100%;
+	padding: 5% 0;
 }
 .serviceDescription h1 {
 	font: 3.3em 'Alice', serif;
@@ -206,6 +206,8 @@ header {
 	font: 1.4em 'Arsenal', sans-serif;
 	color: #454851;
 	margin-top: 25px;
+	padding-right: 5%;
+	padding-left: 5%;
 }
 
 /*--- service image ---*/
@@ -282,7 +284,7 @@ header {
 }
 
 .offerDescription p:last-of-type {
-	font-size: 1.6em;
+	font-size: 1.4em;
 	margin-top: 130px;
 	text-align: center;
 }

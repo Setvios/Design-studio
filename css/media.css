@@ -3,10 +3,6 @@
 	.serviceDescription {
 		padding: 30px 0;
 	}
-	.sectionTitle {
-		margin-top: 35px;
-		margin-bottom: 35px;
-	}
 }
 
 /* Large Devices, Wide Screen */
@@ -16,12 +12,7 @@
 
 /* Medium Devices , Desktop */
 @media only screen and (max-width: 992px) {
-
-	.sectionTitle {
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-
+	
 	.serviceDescription {
 		height: 300px;
 		padding-bottom: 15px;
@@ -84,8 +75,22 @@ and (max-width : 992px) {
 
 /* Small Devices And Tablets */
 @media only screen and (max-width: 768px) {
+	body {
+		font-size: 12px;
+	}
+
 	.headerPhone {
 		text-align: center;
 	}
 
+}
+
+@media only screen and (max-width: 480px) {
+	body {
+		font-size: 10px;
+	}
+	.headerImageSection {
+		width: 80%;
+		height: 50%;
+	}
 }
