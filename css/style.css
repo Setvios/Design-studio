@@ -59,6 +59,7 @@ input {
 	border: none;
 	border-radius: 0px;
 	margin: 0px;
+	z-index: 10;
 }
 
 ul.nav {
@@ -78,7 +79,7 @@ ul.nav {
 	font: bold 1.3em 'Alice', serif;
 	text-transform: uppercase;
 	color: #313131;	
-	line-height: 65px;
+	line-height: 3.4em;
 }
 
 /*--- logo ---*/

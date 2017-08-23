@@ -14,7 +14,7 @@
 @media only screen and (max-width: 992px) {
 	
 	.serviceDescription {
-		height: 300px;
+		height: auto;
 		padding-bottom: 15px;
 	}
 
@@ -37,9 +37,7 @@
 	}
 }
 
-@media only screen 
-and (min-width : 768px) 
-and (max-width : 992px) {
+@media only screen and (min-width : 768px) and (max-width : 992px) {
 
 	.navbar .container {
 		position: relative;
@@ -52,13 +50,8 @@ and (max-width : 992px) {
 
 	/* navbar-nav align */
 	.navbar .navbar-nav > li a {
-		padding-right: 25px;
-		padding-left: 25px;
-	}
-	.navbar .navbar-nav > li a {
-		padding-right: 25px;
-		padding-left: 25px;
-		height: 68px;
+		padding-right: 10px;
+		padding-left: 10px;
 	}
 }
 
@@ -89,8 +82,55 @@ and (max-width : 992px) {
 	body {
 		font-size: 10px;
 	}
+	header {
+		background-position: center;
+	}
+	.nav > li > a {
+		line-height: 25px;
+		padding-left: 25px;
+	}
+	.headerPhone {
+		font-size: 1.6em;
+	}
+	
 	.headerImageSection {
 		width: 80%;
 		height: 50%;
+	}
+	.serviceDescription {
+		padding: 0 10px;
+	}
+	.sectionTitle {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	.backgroundOverlay {
+		height: auto;
+		background-color: rgba(0,0,0,0.3);
+	}
+	.offerDescription {
+		text-shadow: 2px 2px 5px rgba(0,0,0, .8);
+		height: auto;
+		margin: 0;
+	}
+	.offerDescription h2 {
+		padding-top: 35px;
+	}
+	.offerDescription p:last-of-type {
+		margin-top: 100px;
+	}
+	.offerDescription .offerButton,
+	.offerDescription .offerButton:focus {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		padding: 15px 65px;
+		width: 70%;
+	}
+	.contactsInfo {
+		margin-top: 45px;
+		margin-bottom: 40px;
+	}
+	.contactsInfo h3 {
+		margin-bottom: 20px;
 	}
 }
