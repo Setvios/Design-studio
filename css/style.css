@@ -14,6 +14,11 @@ p {
 	font-family: 'Arsenal', sans-serif;
 }
 
+.wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
 /*--- mainButton ---*/
 
 .mainButton,
@@ -195,7 +200,7 @@ header {
 
 .serviceDescription {
 	height: 100%;
-	padding: 5% 0;
+	padding: 20px 0;
 }
 .serviceDescription h1 {
 	font: 3.3em 'Alice', serif;
@@ -231,8 +236,10 @@ header {
 }
 
 .offerDescription {
+	text-shadow: 2px 2px 5px rgba(0,0,0, .8);
 	height: 600px;
 	padding: 0;
+	letter-spacing: 1px;
 }
 
 .backgroundOverlay {
