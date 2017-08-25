@@ -83,15 +83,28 @@
 }
 
 /* Small Devices And Tablets */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
 	body {
 		font-size: 12px;
 	}
 	.headerPhone {
 		text-align: center;
+		padding-bottom: 5px;
 	}
-
+	.navbar-nav > li > a {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 20px;
+	}
+	.navbar button[aria-expanded="true"] {
+		background-color: #EAEAEA;
+		transition: all .5s;
+		-o-transition: all .5s;
+		-moz-transition: all .5s;
+		-webkit-transition: all .5s;
+	}
+}
 }
 
 @media only screen and (max-width: 480px) {

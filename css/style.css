@@ -128,6 +128,13 @@ a.navbar-brand {
 	background-color: inherit;
 	outline: none;
 }
+
+.nav > li > a:focus {
+	color: #313131;
+	background-color: inherit;
+	outline: none;
+}
+
 .nav > li > a:active:after,
 .nav > li > a:hover:after {
 	content: "";
@@ -140,6 +147,12 @@ a.navbar-brand {
 	border-radius: 50%;
 	background-color: #c41654;
 }
+
+.nav > .active > a, 
+.nav > .active > a:hover,
+.nav > .active > a:focus {
+    color: #c41654;
+} 
 
 /*--- navbar-collapse IN ---*/
 
