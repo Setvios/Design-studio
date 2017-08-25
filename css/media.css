@@ -71,6 +71,14 @@
 	.navbar .navbar-collapse {
 		text-align: center;
 	}
+	.offerDescription.secondOfferBackground h2 {
+		padding-left: 2px;
+		padding-right: 3px;
+	}
+	.offerDescription.thirdOfferBackground h2 {
+		padding-left: 36px;
+		padding-right: 37px;
+	}
 
 }
 
