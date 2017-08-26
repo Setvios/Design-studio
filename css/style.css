@@ -14,6 +14,10 @@ p {
 	font-family: 'Arsenal', sans-serif;
 }
 
+input {
+	text-align: center;
+}
+
 .wrapper {
 	max-width: 1600px;
 	margin: 0 auto;
@@ -23,32 +27,27 @@ p {
 
 .mainButton,
 .mainButton:focus {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 60px;
 	font: 1.4em 'Arsenal', sans-serif;
 	color: #c41654;
+	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
-	border-radius: 30px;
-	margin-top: 20px;
-	border: 1px solid #c41654;
-	padding: 10px 60px;
-	display: inline-block;
-	outline: none;
 	background: transparent;
-	text-align: center;
+	border: 1px solid #c41654;
+	border-radius: 30px;
+	outline: none;
 	transition: all .2s;
 	-o-transition: all .2s;
 	-moz-transition: all .2s;
 	-webkit-transition: all .2s;
 }
-
 .mainButton:hover {
 	text-decoration: none;
 	color: #fff;
 	background-color: #c41654;
-}
-
-input {
-	text-align: center;
 }
 
 /*############## HEADER SECTION ##############*/
@@ -57,18 +56,20 @@ input {
 	position: relative;
 }
 
-/*======== Header Navbar ========*/
-
 .navbar {
-	background: #fff;
+	z-index: 10;
+	margin: 0px;
 	border: none;
 	border-radius: 0px;
-	margin: 0px;
-	z-index: 10;
+	background: #fff;
 	-webkit-box-shadow: 0px 2px 5px -2px #999;
 	-moz-box-shadow: 0px 2px 5px -2px #999;
 	-o-box-shadow: 0px 2px 5px -2px #999;
 	box-shadow: 0px 2px 5px -2px #999;
+}
+
+.navbarTransparent {
+	background-color: rgba(255,255,255,.8);
 }
 
 ul.nav {
@@ -86,36 +87,36 @@ ul.nav {
 
 .headerPhone {
 	font: bold 1.3em 'Alice', serif;
-	text-transform: uppercase;
-	color: #313131;	
 	line-height: 3.4em;
+	color: #313131;	
+	text-transform: uppercase;
 }
 
 /*--- logo ---*/
 
 a.navbar-brand {
-	color: #313131;
+	display: inline-block;
 	height: 100%;
 	padding: 4px 15px;
-	display: inline-block;
+	color: #313131;
 }
 .logoFirstWord {
 	font: 1.6em 'SFUITextLight', sans-serif;
 }
 .logoSecondWord {
-	font: 1.6em 'SFUITextBold', sans-serif;
-	margin-top: -12px;
 	display: inline-block;
+	margin-top: -12px;
+	font: 1.6em 'SFUITextBold', sans-serif;
 }
 
 /*--- menu items ---*/
 
 .nav > li > a {
-	font: bold 1.1em 'Alice', serif;
-	text-transform: uppercase;
-	color: #313131;
-	line-height: 35px;
 	position: relative;
+	font: bold 1.1em 'Alice', serif;
+	line-height: 35px;
+	color: #313131;
+	text-transform: uppercase;
 	transition: all .2s;
 	-o-transition: all .2s;
 	-moz-transition: all .2s;
@@ -128,6 +129,11 @@ a.navbar-brand {
 	background-color: inherit;
 	outline: none;
 }
+.nav > li > a:focus {
+	color: #313131;
+	background-color: inherit;
+	outline: none;
+}
 .nav > li > a:active:after,
 .nav > li > a:hover:after {
 	content: "";
@@ -137,9 +143,14 @@ a.navbar-brand {
 	height: 7px;
 	width: 7px;
 	margin-left: -5px;
-	border-radius: 50%;
 	background-color: #c41654;
+	border-radius: 50%;
 }
+.nav > .active > a, 
+.nav > .active > a:hover,
+.nav > .active > a:focus {
+    color: #c41654;
+} 
 
 /*--- navbar-collapse IN ---*/
 
@@ -147,11 +158,6 @@ a.navbar-brand {
 .navbar-collapse.in .nav > li > a:hover:after {
 	content: none;
 }
-
-/* last child tip
-.nav li:last-child a {
-	color: red;
-}*/
 
 /*======== Header Image Section ========*/
 
@@ -175,10 +181,10 @@ header {
 	color: #ececec;
 }
 .headerImageSection h1 {
+	padding-bottom: 25px;
 	font-size: 3.5em;
 	color: #ececec;
 	letter-spacing: 2px;
-	padding-bottom: 25px;
 }
 .headerImageSection h5 {
 	font: 1.1em "SFUITextLight", sans-serif;
@@ -193,29 +199,25 @@ header {
 }
 
 .sectionTitle {
+	margin-top: 45px;
+	margin-bottom: 80px;
 	font: 2.1em 'Alice', serif;
 	color: #454851;
 	text-transform: uppercase;
-	margin-top: 45px;
-	margin-bottom: 80px;
 }
 
 /*--- service description ---*/
 
-.serviceDescription {
-	height: 100%;
-	padding: 20px 0;
-}
 .serviceDescription h1 {
 	font: 3.3em 'Alice', serif;
 	color: #19191a;
-	text-transform: uppercase;
 	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 .serviceDescription p {
+	margin-top: 25px;
 	font: 1.4em 'Arsenal', sans-serif;
 	color: #454851;
-	margin-top: 25px;
 }
 
 /*--- service image ---*/
@@ -224,8 +226,8 @@ header {
 	padding: 0;
 }
 .serviceImage img {
-	max-width: 100%;
 	height: 500px;
+	max-width: 100%;
 }
 
 /* ############## OFFERS SECTION ############## */
@@ -240,9 +242,12 @@ header {
 }
 
 .offerDescription {
-	text-shadow: 2px 2px 5px rgba(0,0,0, .8);
 	padding: 0;
 	letter-spacing: 1px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-shadow: 2px 2px 5px rgba(0,0,0, .8);
 }
 
 .backgroundOverlay {
@@ -257,44 +262,36 @@ header {
 
 .firstOfferBackground {
 	background-image: url('../images/firstOffer.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+
 }
 .secondOfferBackground {
 	background-image: url('../images/secondOffer.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 .thirdOfferBackground {
 	background-image: url('../images/thirdOffer.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
  /* --- offer description ---  */
 
 .offerDescription h2 {
-	font: 2em 'Alice', serif;
-	color: #ffffff;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	padding-top: 65px;
 	margin: 0;
+	font: 2em 'Alice', serif;
+	color: #ffffff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 .offerDescription p {
+	margin-top: 45px;
+	padding: 0 12px;
 	font: 1.3em 'Arsenal', sans-serif;
 	color: #ffffff;
-	margin-top: 45px;
 	text-align: left;
-	padding: 0 12px;
 }
 
 .offerDescription p:last-of-type {
-	font-size: 1.4em;
 	margin-top: 130px;
+	font-size: 1.4em;
 	text-align: center;
 }
 
@@ -302,26 +299,26 @@ header {
 
 .offerDescription .offerButton,
 .offerDescription .offerButton:focus {
+	display: inline-block;
+	width: 80%;
+	margin-top: 35px;
+	margin-bottom: 60px;
+	padding: 20px 65px;
 	font: 1.4em 'Arsenal', sans-serif;
 	color: #ffffff;
 	text-transform: uppercase;
 	text-decoration: none;
-	border-radius: 40px;
-	margin-top: 35px;
-	margin-bottom: 60px;
 	border: 1px solid #ffffff;
-	padding: 20px 65px;
-	display: inline-block;
+	border-radius: 40px;
 	outline: none;
-	width: 80%;
 	transition: all .2s;
 	-o-transition: all .2s;
 	-moz-transition: all .2s;
 	-webkit-transition: all .2s;
 }
 .offerDescription .offerButton:hover {
-	background-color: #fff;
 	color: #242020;
+	background-color: #fff;
 }
 
 
@@ -336,10 +333,10 @@ header {
 
 .inputForm input:not([type="submit"]) {
 	margin-top: 30px;
+	padding: 0 25px;
+	color: #777b89;
 	border: none;
 	border-bottom: 1px solid #000;
-	color: #777b89;
-	padding: 0 25px;
 	outline: none;
 }
 .inputForm input:nth-child(3) {
@@ -357,13 +354,13 @@ header {
 
 
 .contactsInfo {
-	font: 1.4em 'Arsenal', sans-serif;
 	margin-top: 90px;
 	margin-bottom: 70px;
+	font: 1.4em 'Arsenal', sans-serif;
 	color: #454851;
 }
 .contactsInfo h3 {
+	margin-bottom: 35px;
 	font: bold 1em 'Arsenal', sans-serif;
 	text-transform: uppercase;
-	margin-bottom: 35px;
 }
