@@ -30,6 +30,7 @@ $('a[href*="#"]')
 	});
 })
 
+
 // ############## INITIALIZE WOW AND ANIMATE ##############
 
 $(document).ready(function(){
@@ -55,14 +56,28 @@ $(document).ready(function() {
            
             } else {
                 $(".navbar-nav li a[href='#" + sectionId + "']").parent().removeClass("active");
-                
             }
-            
-            
         });
-    
-    
     });
-    
-    
+});
+
+
+// ############## TRANSPARENT NAVBAR ON SCROLL ##############
+
+$(document).ready(function() {
+
+    //caches a jQuery object containing the header element
+    var header = $(".navbar");
+    var titleOffset = $(".firstTitle").offset().top;
+    var windowWidth = $(window).width();
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= titleOffset && windowWidth > 481) {
+            header.addClass("navbarTransparent");
+        } else {
+            header.removeClass("navbarTransparent");
+        }
+    });
 });

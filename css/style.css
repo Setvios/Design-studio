@@ -59,6 +59,8 @@ input {
 
 /*======== Header Navbar ========*/
 
+
+
 .navbar {
 	background: #fff;
 	border: none;
@@ -69,6 +71,10 @@ input {
 	-moz-box-shadow: 0px 2px 5px -2px #999;
 	-o-box-shadow: 0px 2px 5px -2px #999;
 	box-shadow: 0px 2px 5px -2px #999;
+}
+
+.navbarTransparent {
+	background-color: rgba(255,255,255,.8);
 }
 
 ul.nav {
@@ -215,10 +221,6 @@ header {
 
 /*--- service description ---*/
 
-.serviceDescription {
-	height: 100%;
-	padding: 20px 0;
-}
 .serviceDescription h1 {
 	font: 3.3em 'Alice', serif;
 	color: #19191a;
