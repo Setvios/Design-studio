@@ -1,24 +1,23 @@
 @media only screen and (min-width: 992px) {
 
+	.navbar .navbar-nav {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+	.navbar .navbar-collapse {
+		text-align: center;
+	}
+
 	.serviceDescriptionWrapper {
 		height: 500px;
 	}
-
 	.serviceDescription {
 		height: 500px;
 		display: table-cell;
 		vertical-align: middle;
 	}
 
-	.navbar .navbar-nav {
-		display: inline-block;
-		float: none;
-		vertical-align: top;
-	}
-
-	.navbar .navbar-collapse {
-		text-align: center;
-	}
 	.offerDescription.secondOfferBackground h2 {
 		padding-left: 2px;
 		padding-right: 3px;
@@ -27,7 +26,6 @@
 		padding-left: 36px;
 		padding-right: 37px;
 	}
-
 }
 
 /* Medium Devices , Desktop */
@@ -45,7 +43,6 @@
 		padding: 0 50px;
 		text-align: center;
 	}
-
 	/* services button, h1, p align center */
 	.services .mainButton {
 		margin: 25px auto;
@@ -71,16 +68,15 @@ and
 	body {
 		font-size: 13px;
 	}
+
 	.navbar .container {
 		position: relative;
 		width: 100%;
 	}
-
 	.navbar .navbar-right {
 		position: absolute;
 		right: 45px;
 	}
-
 	/* navbar-nav align */
 	.navbar .navbar-nav > li a {
 		font-size: 0.9em;
@@ -91,10 +87,10 @@ and
 	.offerDescription {
 		margin-bottom: 0;
 	}
+
 	.headerPhone {
 		line-height: 3.7em;
 	}
-
 }
 
 /* Small Devices And Tablets */
@@ -103,6 +99,7 @@ and
 	body {
 		font-size: 12px;
 	}
+
 	.headerPhone {
 		font-size: 1.4em;
 		text-align: center;
@@ -120,7 +117,6 @@ and
 		-moz-transition: all .5s;
 		-webkit-transition: all .5s;
 	}
-
 }
 
 @media only screen and (max-width: 480px) {
@@ -128,21 +124,23 @@ and
 	body {
 		font-size: 10px;
 	}
+
 	header {
 		background-position: center;
 	}
 	.nav > li > a {
 		line-height: 25px;
 		padding-left: 25px;
-	}
-	
+	}	
 	.headerImageSection {
 		width: 80%;
 		height: 50%;
 	}
+
 	.serviceDescription {
 		padding: 0 20px;
 	}
+	
 	.backgroundOverlay {
 		height: auto;
 		background-color: rgba(0,0,0,0.3);
