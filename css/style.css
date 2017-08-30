@@ -19,11 +19,12 @@ input {
 }
 
 .wrapper {
-	max-width: 1600px;
+	min-width: 320px;
+	min-height: 100%;
 	margin: 0 auto;
 }
 
-/*--- mainButton ---*/
+/*-- mainButton --*/
 
 .mainButton,
 .mainButton:focus {
@@ -80,7 +81,7 @@ ul.nav {
 	margin-top: 0;
 }
 
-/* --- nav button --- */
+/* -- nav button -- */
 .navbar-toggle {
 	margin-top: 12px;
 }
@@ -92,7 +93,7 @@ ul.nav {
 	text-transform: uppercase;
 }
 
-/*--- logo ---*/
+/*-- logo --*/
 
 a.navbar-brand {
 	display: inline-block;
@@ -109,7 +110,7 @@ a.navbar-brand {
 	font: 1.6em 'SFUITextBold', sans-serif;
 }
 
-/*--- menu items ---*/
+/*-- menu items --*/
 
 .nav > li > a {
 	position: relative;
@@ -134,17 +135,27 @@ a.navbar-brand {
 	background-color: inherit;
 	outline: none;
 }
-.nav > li > a:active:after,
-.nav > li > a:hover:after {
+.nav > li > a:after,
+.nav > li > a:after {
+	opacity: 0;
 	content: "";
 	position: absolute;
-	bottom: 10px;
+	bottom: 0px;
 	left: 50%;
 	height: 7px;
 	width: 7px;
 	margin-left: -5px;
 	background-color: #c41654;
 	border-radius: 50%;
+	transition: all .4s ;
+	-o-transition: all .4s;
+	-moz-transition: all .4s;
+	-webkit-transition: all .4s;
+}
+.nav > li > a:active:after,
+.nav > li > a:hover:after {
+	opacity: 1;
+	bottom: 10px;
 }
 .nav > .active > a, 
 .nav > .active > a:hover,
@@ -152,14 +163,14 @@ a.navbar-brand {
     color: #c41654;
 } 
 
-/*--- navbar-collapse IN ---*/
+/*-- navbar-collapse IN --*/
 
 .navbar-collapse.in .nav > li > a:active:after,
 .navbar-collapse.in .nav > li > a:hover:after {
 	content: none;
 }
 
-/*======== Header Image Section ========*/
+/*############## Header Image Section ##############*/
 
 header {
 	background-image: url('../images/headerBackground.png');
@@ -169,7 +180,7 @@ header {
 	background-attachment: fixed;
 	min-height: 100vh;
 }
-.headerImageSection {
+/* .headerImageWrapper {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -179,6 +190,16 @@ header {
 	height: 40%;
 	margin: auto;
 	color: #ececec;
+} */
+.headerImageWrapper {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	color: #ececec;
+	transform: translate(50%, -50%);
+	-o-transform: translate(50%, -50%);
+	-moz-transform: translate(50%, -50%);
+	-webkit-transform: translate(50%, -50%);
 }
 .headerImageSection h1 {
 	padding-bottom: 25px;
@@ -206,7 +227,7 @@ header {
 	text-transform: uppercase;
 }
 
-/*--- service description ---*/
+/*-- service description --*/
 
 .serviceDescription h1 {
 	font: 3.3em 'Alice', serif;
@@ -220,7 +241,7 @@ header {
 	color: #454851;
 }
 
-/*--- service image ---*/
+/*-- service image --*/
 
 .serviceImage{
 	padding: 0;
@@ -271,7 +292,7 @@ header {
 	background-image: url('../images/thirdOffer.png');
 }
 
- /* --- offer description ---  */
+ /* -- offer description --  */
 
 .offerDescription h2 {
 	padding-top: 65px;
@@ -295,7 +316,7 @@ header {
 	text-align: center;
 }
 
-/*--- offerButton ---*/
+/*-- offerButton --*/
 
 .offerDescription .offerButton,
 .offerDescription .offerButton:focus {
@@ -329,7 +350,7 @@ header {
 	color: #454851;
 }
 
-/* --- input field --- */
+/* -- input field -- */
 
 .inputForm input:not([type="submit"]) {
 	margin-top: 30px;
@@ -343,7 +364,7 @@ header {
 	margin-top: 10px;
 }
 
-/* --- input button --- */
+/* -- input button -- */
 
 .inputForm input[type="submit"] {
 	margin-top: 40px;
@@ -363,4 +384,59 @@ header {
 	margin-bottom: 35px;
 	font: bold 1em 'Arsenal', sans-serif;
 	text-transform: uppercase;
+}
+
+/* ======== Popup ======== */
+.popup {
+	width:100%;
+	height:100%;
+	display:none;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:rgba(0,0,0,0.75);
+}
+
+/* Inner */
+.popup-inner {
+	max-width:700px;
+	width:90%;
+	padding:40px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+	box-shadow:0px 2px 6px rgba(0,0,0,1);
+	border-radius:3px;
+	background:#fff;
+	text-align: center;
+}
+
+/* Close Button */
+.popup-close {
+	width:30px;
+	height:30px;
+	padding-top:4px;
+	display:inline-block;
+	position:absolute;
+	top:0px;
+	right:0px;
+	transition:ease 0.25s all;
+	-webkit-transform:translate(50%, -50%);
+	transform:translate(50%, -50%);
+	border-radius:1000px;
+	background:rgba(0,0,0,0.8);
+	font-family:Arial, Sans-Serif;
+	font-size:20px;
+	text-align:center;
+	line-height:100%;
+	color:#fff;
+}
+
+.popup-close:hover {
+	-webkit-transform:translate(50%, -50%) rotate(180deg);
+	transform:translate(50%, -50%) rotate(180deg);
+	background:rgba(0,0,0,1);
+	text-decoration:none;
 }
